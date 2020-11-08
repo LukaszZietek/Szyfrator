@@ -7,6 +7,7 @@
 #include "CezarAlgorithm.h"
 #include "SecondAlgorithm.h"
 #include "DatabaseModel.h"
+#include "MyOwnAlgorithm.h"
 
 // Klasa zosta³a zaimplementowana aby by³a kontrolerem ³¹cz¹cym aplikacjê z baz¹ danych oraz algorytmami.
 
@@ -23,9 +24,13 @@ public:
         {
             db = DatabaseModel("second.txt");
         }
-        else
+        else if (typeid(T).name() == typeid(CezarAlgorithm).name())
         {
             db = DatabaseModel("cezar.txt");
+        }
+        else
+        {
+            db = DatabaseModel("ownalgorithm.txt");
         }
     }
 

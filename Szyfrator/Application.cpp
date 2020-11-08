@@ -187,6 +187,7 @@ void Application::runApp()
         std::cout << "-------------------------------------------------------------------------------------" << std::endl;
         std::cout << "1. Szyfr cezara" << std::endl;
         std::cout << "2. Szyfr przestawieniowy" << std::endl;
+        std::cout << "3. Wlasny szyfr" << std::endl;
         std::cout << "9. Koniec" << std::endl;
         std::cout << "-------------------------------------------------------------------------------------" << std::endl;
         std::cout << "Twoj wybor: ";
@@ -210,7 +211,13 @@ void Application::runApp()
             EncryptionController<SecondAlgorithm> enc;
             algorithmMenu(enc);
         }
-        break;
+            break;
+        case 3: // Wybranie wlasnego szyfru
+        {
+            EncryptionController<MyOwnAlgorithm> enc;
+            algorithmMenu(enc);
+        }
+            break;
         case 9: { // wylaczenie programu
             std::cout << "---Dziekujemy za skorzystanie z programu---" << std::endl;
             exit(0);

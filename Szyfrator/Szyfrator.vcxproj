@@ -151,6 +151,7 @@
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="CezarAlgorithm.cpp" />
     <ClCompile Include="DatabaseModel.cpp" />
+    <ClCompile Include="MyOwnAlgorithm.cpp" />
     <ClCompile Include="SecondAlgorithm.cpp" />
     <ClCompile Include="Szyfrator.cpp" />
     <ClCompile Include="Tests.cpp" />
@@ -161,6 +162,7 @@
     <ClInclude Include="CezarAlgorithm.h" />
     <ClInclude Include="DatabaseModel.h" />
     <ClInclude Include="EncryptionController.h" />
+    <ClInclude Include="MyOwnAlgorithm.h" />
     <ClInclude Include="SecondAlgorithm.h" />
     <ClInclude Include="Tests.h" />
   </ItemGroup>
